@@ -18,3 +18,8 @@ Write a Java program to convert an array to an ArrayList.
 Write a Java program to convert an ArrayList to an array.
 Write a Java program to find all pairs of elements in an array whose sum is equal to a specified number.
 Write a Java program to test two arrays' equality.
+Write a Java program to find a missing number in an array.
+Write a Java program to find common elements in three sorted (in non-decreasing order) arrays.
+Write a Java program to get the difference between the largest and smallest values in an array of integers. The array must have a length of at least 1.
+Write a Java program to compute the average value of an array of integers except the largest and smallest values.
+Write a Java program to check if the sum of all the 10's in the array is exactly 30. Return false if the condition does not satisfy, otherwise true.
