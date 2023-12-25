@@ -16,12 +16,16 @@ public class code27 {
     public static int RemoveDuplicate(int a[])
     {
         HashSet<Integer> ob = new HashSet<Integer>();
-
+        int oc=0;
         for (int i = 0; i < a.length; i++) {
-            for (int j = i; j < a.length; j++) {
-                if(a[i]!=a[j])
-                ob.add(a[i]);
+            for (int j = i+1; j < a.length; j++) {
+                if(a[i]==a[j])
+                oc++;
             }
+            if(oc==0)
+            ob.add(a[i]);
+            
+            oc=0;
         }
         for (Integer integer : ob) {
             System.out.println(integer);

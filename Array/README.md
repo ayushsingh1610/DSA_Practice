@@ -24,3 +24,6 @@ Write a Java program to move all 0's to the end of an array. Maintain the relati
 Write a Java program to get the difference between the largest and smallest values in an array of integers. The array must have a length of at least 1.
 Write a Java program to compute the average value of an array of integers except the largest and smallest values.
 Write a Java program to check if the sum of all the 10's in the array is exactly 30. Return false if the condition does not satisfy, otherwise true.
+Write a Java program to check if an array of integers contains two specified elements 65 and 77.
+Write a Java program to remove duplicate elements from a given array and return the updated array length.Sample array: [20, 20, 30, 40, 50, 50, 50]. After removing the duplicate elements the program should return 4 as the new length of the array.
+Write a Java program to find the length of the longest consecutive elements sequence from an unsorted array of integers.Sample array: [49, 1, 3, 200, 2, 4, 70, 5]|.The longest consecutive elements sequence is [1, 2, 3, 4, 5], therefore the program will return its length 5.
