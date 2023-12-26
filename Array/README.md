@@ -28,3 +28,4 @@ Write a Java program to check if an array of integers contains two specified ele
 Write a Java program to remove duplicate elements from a given array and return the updated array length.Sample array: [20, 20, 30, 40, 50, 50, 50]. After removing the duplicate elements the program should return 4 as the new length of the array.
 Write a Java program to find the length of the longest consecutive elements sequence from an unsorted array of integers.Sample array: [49, 1, 3, 200, 2, 4, 70, 5]|.The longest consecutive elements sequence is [1, 2, 3, 4, 5], therefore the program will return its length 5.
 Write a Java program to get the majority element from an array of integers containing duplicates. Majority element: A majority element is an element that appears more than n/2 times where n is the array size.
+Write a Java program to find the two elements in a given array of positive and negative numbers such that their sum is close to zero.
