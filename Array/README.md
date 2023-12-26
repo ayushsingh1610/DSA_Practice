@@ -29,3 +29,7 @@ Write a Java program to remove duplicate elements from a given array and return 
 Write a Java program to find the length of the longest consecutive elements sequence from an unsorted array of integers.Sample array: [49, 1, 3, 200, 2, 4, 70, 5]|.The longest consecutive elements sequence is [1, 2, 3, 4, 5], therefore the program will return its length 5.
 Write a Java program to get the majority element from an array of integers containing duplicates. Majority element: A majority element is an element that appears more than n/2 times where n is the array size.
 Write a Java program to find the two elements in a given array of positive and negative numbers such that their sum is close to zero.
+Write a Java program to find the smallest and second smallest elements of a given array.
+Write a Java program to separate 0s and 1s in an array of 0s and 1s into left and right sides.
+Write a Java program to find all combinations of four elements of an array whose sum is equal to a given value.
+Write a Java program to check whether there is a pair with a specified sum in a given sorted and rotated array.
