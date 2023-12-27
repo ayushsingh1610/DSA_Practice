@@ -33,3 +33,6 @@ Write a Java program to find the smallest and second smallest elements of a give
 Write a Java program to separate 0s and 1s in an array of 0s and 1s into left and right sides.
 Write a Java program to find all combinations of four elements of an array whose sum is equal to a given value.
 Write a Java program to check whether there is a pair with a specified sum in a given sorted and rotated array.
+Write a Java program to arrange the elements of an array of integers so that all negative integers appear before all positive integers.
+Write a Java program to arrange the elements of an array of integers so that all positive integers appear before all negative integers.
+Write a Java program to sort an array of positive integers from an array. In the sorted array the value of the first element should be maximum, the second value should be a minimum, third should be the second maximum, the fourth should be the second minimum and so on.
