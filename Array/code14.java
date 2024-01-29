@@ -21,17 +21,14 @@ public class code14 {
     public static int[] removeDuplicate(int a[])
     {
         int ans[] = new int[a.length];
-        int k=0,count=0;
+        int k=0,temp= -1;
         for(int i=0;i<a.length;i++)
         {
-            for (int j = i; j < a.length; j++) {
-                if(a[i]==a[j])
-                count++;
+            if(temp!=a[i])
+            {
+                ans[k++] = a[i];
+                temp = a[i];
             }
-            if(count==1)
-            ans[k++] = a[i];
-
-            count=0;
         }
         return ans;
     }
