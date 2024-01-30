@@ -43,7 +43,7 @@ Write a Java program to find the maximum product of two integers in a given arra
 Write a Java program to shuffle a given array of integers.
 Write a Java program to check if a given array contains a subarray with 0 sum.
 Write a Java program to print all sub-arrays with 0 sum present in a given array of integers.
-Write a Java program to check if a sub-array is formed by consecutive integers from a given array of integers.
+``Write a Java program to check if a sub-array is formed by consecutive integers from a given array of integers.``
 Write a Java program to rearrange a given array of unique elements such that every second element of the array is greater than its left and right elements.
 Write a Java program to find the largest number from a given list of non-negative integers.
 Write a Java program to find all triplets equal to a given sum in an unsorted array of integers.
