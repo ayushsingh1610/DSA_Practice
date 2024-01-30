@@ -40,3 +40,12 @@ Write a Java program to sort an array of positive integers from an array. In the
 Write a Java program to separate even and odd numbers from a given array of integers. Put all even numbers first, and then odd numbers.
 Write a Java program to replace every element with the next greatest element (from the right side) in a given array of integers. There is no element next to the last element, therefore replace it with -1. 
 Write a Java program to find the maximum product of two integers in a given array of integers.
+Write a Java program to shuffle a given array of integers.
+Write a Java program to check if a given array contains a subarray with 0 sum.
+Write a Java program to print all sub-arrays with 0 sum present in a given array of integers.
+Write a Java program to check if a sub-array is formed by consecutive integers from a given array of integers.
+Write a Java program to rearrange a given array of unique elements such that every second element of the array is greater than its left and right elements.
+Write a Java program to find the largest number from a given list of non-negative integers.
+Write a Java program to find all triplets equal to a given sum in an unsorted array of integers.
+Write a Java program to calculate the largest gap between sorted elements of an array of integers.
+Write a Java program to determine whether numbers in an array can be rearranged so that each number appears exactly once in a consecutive list of numbers. Return true otherwise false.
