@@ -10,19 +10,26 @@ public class code43 {
         for (int i = 0; i < a.length; i++) {
             a[i] = sc.nextInt();
         }
+        if(SUM_ZERO(a))
+        System.out.println("Contains Sum Zero");
+
+        else
+        System.out.println("Doesn't contain Sum Zero");
+    }
+    
+
+    public static boolean SUM_ZERO(int a[])
+    {
         for (int i = 0; i < a.length; i++) {
             int sum = a[i];
             for (int j = i+1; j < a.length; j++) {      //Start the Jth index after the ith index
                 sum+=a[j];                              //Take the sum from ith to jth index
-                if(sum==0) Display(a,i,j);              //Checks the condition and display if it sum value is ZERO
+                if(sum==0)
+                {
+                    return true;
+                } 
             }
         }
-    }
-    public static void Display(int a[], int start, int end)
-    {
-        for (int i = start; i <= end; i++) {
-            System.out.print(a[i] + " ");
-        }
-        System.out.println();
+        return false;
     }
 }
