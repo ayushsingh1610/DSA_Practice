@@ -3,10 +3,11 @@ import java.util.*;
 class code46
 {
     public static void main(String[] args) {
-        int arr[] = {1, 2, 4, 9, 5, 3, 8, 7, 10, 12, 14 };
+        int arr[] = {1, 2, 4, 9, 5, 3, 8, 7, 10, 12 };
         // int a[] = Input();
-        int result[] = Rearrangement(arr);
-        Display(result);
+        int result[] = Rearrangement(arr);      // Solution by ChatGpt
+        rearrange(arr);                         // Solution by Me.
+        Display(arr);
 
     }
     public static int[] Input()
@@ -56,5 +57,28 @@ class code46
         for (int i : a) {
             System.out.print(i + " ");
         }
+    }
+    public static void rearrange(int a[])
+    {
+        int n = a.length;
+        for (int i = 0; i < a.length; i++) {
+
+            if(i%2!=0)
+            {
+                for (int j = i+1; j < a.length; j++) {
+                if(a[j]>a[i])
+                {
+                    swap(a,i,j);
+                    break;
+                }
+            }
+        }
+        }
+    }
+    public static void swap(int a[], int i, int j)
+    {
+        int temp = a[i];
+        a[i] = a[j];
+        a[j] = temp;
     }
 }
