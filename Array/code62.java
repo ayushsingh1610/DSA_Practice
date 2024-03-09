@@ -8,12 +8,8 @@ public class code62
         // Scanner sc = new Scanner(System.in);
         int a[][] = {{1,3},{2,6},{8,10},{15,18}};
 
-        List<List<Integer>> ans = new ArrayList<>();
-        ans = Merge_Overlapping_1(a);
-
-        for (List<Integer> list : ans) {
-            System.out.println(list);
-        }
+        System.out.println("Answer = " + Merge_Overlapping_1(a));
+        System.out.println("Answer = " + Merge_Overlapping_2(a));
     }
 
     public static List<List<Integer>> Merge_Overlapping_1(int a[][])
@@ -42,6 +38,31 @@ public class code62
             }
             ans.add(Arrays.asList(start,end));              //Store only the highest end value from following list
         }
+        return ans;
+    }
+
+    // optimal approach
+    public static List<List<Integer>> Merge_Overlapping_2(int a[][])
+    {
+        List<List<Integer>> ans = new ArrayList<>();
+        ans.add(Arrays.asList(a[0][0], a[0][1]));
+        for (int i = 1; i < a.length; i++) {
+            
+            if(a[i][1]<ans.get(ans.size()-1).get(0))        // For skip the overlapping element
+            {
+                continue;
+            }
+            else if(a[i][0]<ans.get(ans.size()-1).get(1))   // Change the ans list if possible
+            {
+                int temp = Math.max(a[i][1], ans.get(ans.size()-1).get(1));         // Store the max of last elements
+                ans.get(ans.size()-1).set(1,temp);                                  // Change the ans list
+            }
+            else 
+            {
+                ans.add(Arrays.asList(a[i][0], a[i][1]));                                 //Store the new pair if it is not overlapping
+            }
+        }
+        
         return ans;
     }
 }
