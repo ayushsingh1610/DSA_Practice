@@ -1,3 +1,4 @@
+Print the Stored element in LinkedList after adding element from the first.
 Print the Middle of a given linked list
 Reverse a Linked List
 Reverse a Doubly Linked List
