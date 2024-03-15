@@ -1,5 +1,5 @@
 // Print the Stored element in LinkedList.
-import java.util.*;
+// import java.util.*;
 class Node
 {
     int data;

@@ -1,4 +1,5 @@
 Print the Stored element in LinkedList after adding element from the first.
+Deletion in Linked List
 Print the Middle of a given linked list
 Reverse a Linked List
 Reverse a Doubly Linked List
@@ -19,4 +20,3 @@ Remove every k-th node of the linked list
 Pairwise swap of a Linked list
 Occurrence of an integer in a Linked List
 Given a Linked list of 0s, 1s and 2s, sort it
-Deletion in Linked List
