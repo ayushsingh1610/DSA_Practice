@@ -26,12 +26,32 @@ class code08
         }
         System.out.println("Middle of LL is = " + middle_node(head));
 
+        System.out.println("Middle from = ");
+        Display(middle(head));
+    }
+
+    public static Node middle(Node head)
+    {
+        Node n = head;
+        int c=0;
+        while(n!=null)
+        {
+            c++;
+            if(c == (lengthLL(head)/2)+1)                   //check the middle element and break the traversal 
+            {
+                break;
+            }
+            n = n.next;
+        }
+        return n;                                          //return the LL from the point where traversal stops.
     }
     public static int middle_node(Node head)
     {
         Node n = head;
         int c=0;
         int middle = -1;
+
+        //Return same element if there is only one element or none.
         if(n==null || n.next==null)
         {
             middle =  n.data;
@@ -39,7 +59,7 @@ class code08
         while(n!=null)
         {
             c++;
-            if(c == (lengthLL(head)/2)+1)
+            if(c == (lengthLL(head)/2)+1)                   //Check if the count is equal to middle
             {
                 middle =  n.data;
             }
@@ -57,5 +77,14 @@ class code08
             n = n.next;
         }
         return c;
+    }
+    public static void Display(Node head)
+    {
+        while(head!=null)
+        {
+            System.out.print(head.data + " -> ");
+            head = head.next;
+        }
+        System.out.println("null");
     }
 }
