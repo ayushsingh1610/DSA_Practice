@@ -28,6 +28,9 @@ class code08
 
         System.out.println("Middle from = ");
         Display(middle(head));
+
+        System.out.println("\nMiddle from by New Algo =  ");
+        Display(Middle_Node(head));
     }
 
     public static Node middle(Node head)
@@ -44,6 +47,23 @@ class code08
             n = n.next;
         }
         return n;                                          //return the LL from the point where traversal stops.
+    }
+
+    //Tortoise and Hare Algorithm
+    public static Node Middle_Node(Node head)
+    {
+        Node slow = head;
+        Node fast = head;
+        while(slow!=null)
+        {
+            if(fast == null || fast.next==null)
+            {
+                break;
+            }
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return slow;
     }
     public static int middle_node(Node head)
     {
