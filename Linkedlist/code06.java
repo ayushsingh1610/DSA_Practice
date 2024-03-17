@@ -51,7 +51,7 @@ class code06
             n = n.next;
         }
 
-        return head;
+        return head;                //Always return the head because it store the starting index which traverse through the LL.
     }
 
     public static node Display(node head)

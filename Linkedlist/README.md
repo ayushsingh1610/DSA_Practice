@@ -1,5 +1,10 @@
 Print the Stored element in LinkedList after adding element from the first.
 Deletion in Linked List
+Print the Length of LinkedList
+Search an element in the LL
+Delete the head of the LL
+Delete the kth element of the LL
+Insert at the tail of the LL
 Print the Middle of a given linked list
 Reverse a Linked List
 Reverse a Doubly Linked List
