@@ -20,20 +20,25 @@ class code09
     public static void main(String[] args) {
         Node head = null;
         for (int i=1;i<=10 ;i++ ) {
-            head = new Node(i,head);
+            head = new Node(11 - i,head);
         }
 
-        Display(Reverse(head));
+        Display(head);
     }
     public static Node Reverse(Node head)
     {
-        Node prev = null;
-        Node temp = head;
-        while(temp!=null)
+        Node prev = null;       //Create a Null node
+        Node temp = head;       //Create a temp node for traversal
+        while(temp!=null)   
         {
-            Node front = temp.next;
-            prev.next = temp;
-            temp = temp.next; 
+            Node front = temp.next;         //This will store the reference of next node
+
+            temp.next = prev;               //This will point the next reference to the previous node.
+
+            prev = temp;                    //This will ensure that prev is now update to temp's place
+
+            temp = front;                   //This will update the temp to next node. 
+            
         }
         return head;
     }
