@@ -24,6 +24,7 @@ class code09
         }
 
         Display(head);
+        Display(Reverse(head));
     }
     public static Node Reverse(Node head)
     {
@@ -40,7 +41,7 @@ class code09
             temp = front;                   //This will update the temp to next node. 
             
         }
-        return head;
+        return prev;
     }
     public static void Display(Node head)
     {
