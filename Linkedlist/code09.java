@@ -1,4 +1,5 @@
 // Reverse a Linked List
+import java.util.*;
 class Node
 {
     int data;
@@ -18,13 +19,60 @@ class Node
 class code09
 {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         Node head = null;
         for (int i=1;i<=10 ;i++ ) {
             head = new Node(11 - i,head);
         }
+        System.out.println("1 for Stack method\n2 for Changing the refernce\n3 for Recursion");
+        System.out.print("Enter your choice = ");
+        int n = sc.nextInt();
 
+        System.out.println("This is the Original LL = ");
         Display(head);
-        Display(Reverse(head));
+        System.out.println();
+        switch(n)
+        {
+        case 1:
+            {
+                System.out.println("By Stack method = ");
+                Display(Reversal_Stack(head));
+                break;
+            }
+        case 2:
+            {
+                System.out.println("By changing the reference = ");
+                Display(Reverse(head));
+                break;
+            }
+        case 3:
+            {
+                System.out.println("\nBy Recursion = ");
+                Display(Reversal_Recursion(head));
+                break;
+            }
+        default:
+            {
+                System.out.println("Invalid choice");
+            }
+        }
+    }
+    public static Node Reversal_Stack(Node head)
+    {
+        Node n = head;
+        Node temp = head;
+        Stack<Integer> s = new Stack<>();
+        while(n!=null)
+        {
+            s.push(n.data);
+            n = n.next;
+        }
+        while(temp!=null)
+        {
+            temp.data = s.pop();
+            temp = temp.next;
+        }
+        return head;
     }
     public static Node Reverse(Node head)
     {
@@ -42,6 +90,23 @@ class code09
             
         }
         return prev;
+    }
+
+    public static Node Reversal_Recursion(Node head)
+    {
+        
+        if(head==null || head.next==null)
+        {
+            return head;
+        }
+        
+
+        Node newhead = Reversal_Recursion(head.next);           //This will pass the following LL
+        Node front = head.next;                                 //This will store the next element to the head
+        front.next = head;                                      //This will points the front's next to the head so we can reverse it
+        head.next = null;                                       //This will points the head to null
+
+        return newhead;
     }
     public static void Display(Node head)
     {
