@@ -31,7 +31,8 @@ class code12
 		int n = sc.nextInt();
 		printLL(head);
 		// head = rotateLL(head);
-		deleteNthNode(head,n);
+		// deleteNthNode(head,n);
+		head = deleteNthnodeBy_2Pointer(head,n);
 		printLL(head);
 	}
 	public static void deleteNthNode(Node head, int n)
@@ -71,6 +72,31 @@ class code12
 		}
 
 	}*/
+
+	public static Node deleteNthnodeBy_2Pointer(Node head, int n)
+	{
+		Node fast = head;
+		Node slow = head;
+
+		// If the nth node is last index from ending the we have to remove the 1st node from starting by changing head position
+		if(n==length(head))
+		{
+			head = head.next;
+			return head;
+		}
+
+		for(int i= 0; i<n;i++)
+		{
+			fast = fast.next;
+		}
+		while(fast.next!=null)
+		{
+			fast = fast.next;
+			slow = slow.next;
+		}
+		slow.next = slow.next.next;
+		return head;
+	}
 	public static Node rotateLL(Node head)
 	{
 		Node n = head;
