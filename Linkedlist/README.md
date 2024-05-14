@@ -10,14 +10,14 @@
 1. Print the Middle of a given linked list
 1. Reverse a Linked List
 1. Reverse a Doubly Linked List
+1. Detect a loop in the LinkedList
 1. Rotate a linked list.
-1. Nth node from end of linked list
+1. Remove Nth node from end of linked list
 1. Delete last occurrence of an item from linked list
 1. Delete middle of linked list
 1. Remove duplicate elements from sorted linked list
 1. Delete N nodes after M nodes of a linked list
 1. Merge a linked list into another linked list at alternate positions
-1. Detect a loop in the LinkedList
 1. Circular Linked List Traversal
 1. Deletion from a Circular Linked List
 1. Delete without head pointer
