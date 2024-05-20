@@ -16,6 +16,7 @@
 1. Delete last occurrence of an item from linked list
 1. Delete middle of linked list
 1. Remove duplicate elements from sorted linked list
+1. Add 2 List in LinkedList
 1. Delete N nodes after M nodes of a linked list
 1. Merge a linked list into another linked list at alternate positions
 1. Circular Linked List Traversal
